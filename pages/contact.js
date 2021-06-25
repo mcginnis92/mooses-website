@@ -1,6 +1,7 @@
 import Navigation from "./navigation";
 import styles from "../styles/Home.module.css";
 import Head from "next/head";
+import Image from "next/image";
 
 const Contact = () => (
     <div className={styles.container}>
@@ -13,9 +14,20 @@ const Contact = () => (
             <Navigation />
             <main className={styles.main}>
                 <h1>
-                    {`Contact Moose`}
+                    {`Contact Me`}
                 </h1>
-                <p>{'Send me a treat!'}</p>
+                <div>
+                    <Image alt={'Moose Barking'} height={400} src={"/../public/moose-howl.png"} width={300}/>
+                </div>
+                <h2>{'Howl at me!'}</h2>
+                <form onSubmit={(event) => {
+                    event.preventDefault();
+                    console.log('message sent to moose')
+                }}>
+                    <textarea placeholder={'Your message to Moose'} />
+                    <input />
+                    <button type="submit">{'Send to Moose'}</button>
+                </form>
             </main>
         </div>
     </div>

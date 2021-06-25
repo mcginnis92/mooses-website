@@ -15,12 +15,12 @@ export default function Home() {
         <Navigation />
         <main className={styles.main}>
           <h1>
-            {`Hello, I'm Moose.`}
+            {`Hi, I'm Moose`}
           </h1>
           <div>
             <Image alt={'Moose Headshot'} height={400} src={"/../public/moose.png"} width={300}/>
           </div>
-          <p>{'Welcome to my website.'}</p>
+          <p>{`Welcome to Moose's corner of the web.`}</p>
         </main>
       </div>
     </div>

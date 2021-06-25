@@ -1,6 +1,7 @@
 import Navigation from "./navigation";
 import styles from "../styles/Home.module.css";
 import Head from "next/head";
+import Image from "next/image";
 
 const About = () => (
     <div className={styles.container}>
@@ -13,9 +14,16 @@ const About = () => (
             <Navigation />
             <main className={styles.main}>
                 <h1>
-                    {'About Moose'}
+                    {'About Me'}
                 </h1>
-                <p>{'Send me a treat!'}</p>
+                <div>
+                    <Image alt={'Moose Snow'} height={350} src={"/../public/moose-snow.png"} width={300}/>
+                </div>
+                <div>
+                    <div>{'I like playing in the snow.'}</div>
+                    <div>{'I enjoy a frozen peanut butter Kong on a hot day.'}</div>
+                    <div>{'I am great at fetch.'}</div>
+                </div>
             </main>
         </div>
     </div>
