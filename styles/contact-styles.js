@@ -12,6 +12,8 @@ export const StyledForm = styled.form`
 `;
 
 export const StyledTextArea = styled(Textarea)`
+  height: 200px;
+  width: 250px;
   margin-bottom: ${spacing.medium};
 `;
 

@@ -21,10 +21,14 @@ export const StyledNavigation = styled.nav`
   color: white;
   justify-content: space-evenly;
   background-color: #6A81B4;
+  
+  ul {
+    padding: 0;
+  }
 `;
 
 export const StyledNavigationLink = styled.a`
-  margin: ${spacing.small};
+  margin: ${spacing.medium};
   
   :hover, :focus {
     cursor: pointer;
