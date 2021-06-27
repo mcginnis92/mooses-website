@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "relative-deps"
   },
   "dependencies": {
     "next": "11.0.1",
@@ -15,6 +16,10 @@
   },
   "devDependencies": {
     "eslint": "7.29.0",
-    "eslint-config-next": "11.0.1"
+    "eslint-config-next": "11.0.1",
+    "relative-deps": "^1.0.7"
+  },
+  "relativeDependencies": {
+    "design-system-styled-components": "file:../../../lerna-yarn-workspaces-monorepo/packages/design-system-styled-components"
   }
 }
