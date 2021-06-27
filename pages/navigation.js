@@ -1,14 +1,20 @@
-import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import {StyledNavigation, StyledNavigationLink} from "../styles/global-styles";
 
 const Navigation = () => (
-    <nav className={styles.nav}>
+    <StyledNavigation>
         <ul>
-            <Link href="/"><a>{'Home'}</a></Link>
-            <Link href="/about"><a>{'About Moose'}</a></Link>
-            <Link href="/contact"><a>{'Contact Moose'}</a></Link>
+            <Link href="/">
+                <StyledNavigationLink>{'Home'}</StyledNavigationLink>
+            </Link>
+            <Link href="/about">
+                <StyledNavigationLink>{'About Moose'}</StyledNavigationLink>
+            </Link>
+            <Link href="/contact">
+                <StyledNavigationLink>{'Contact Moose'}</StyledNavigationLink>
+            </Link>
         </ul>
-    </nav>
+    </StyledNavigation>
 );
 
 export default Navigation;
