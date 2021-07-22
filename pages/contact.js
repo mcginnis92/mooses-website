@@ -3,6 +3,8 @@ import styles from "../styles/Home.module.css";
 import Head from "next/head";
 import Image from "next/image";
 
+import {Button, Input} from 'components';
+
 const Contact = () => (
     <div className={styles.container}>
         <Head>
@@ -25,8 +27,8 @@ const Contact = () => (
                     event.preventDefault();
                     console.log('message sent to moose')
                 }}>
-                    <input placeholder={"woof@dogs.com"} />
-                    <button type="submit">{'Subscribe'}</button>
+                    <Input id="email" placeholder="woof@dogs.com" />
+                    <Button type="submit">{'Subscribe'}</Button>
                 </form>
             </main>
         </div>
