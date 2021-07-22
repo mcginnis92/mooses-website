@@ -12,6 +12,22 @@
   background-color: lightskyblue;
 }
 
+.navList {
+  padding: 0;
+}
+
+.navLink{
+  padding: 0 15px;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+.navLinkBig {
+  font-size: 18px;
+}
+
 .main {
   flex: 1;
   display: flex;
