@@ -20,13 +20,13 @@ const Contact = () => (
                     <Image alt={'Moose Barking'} height={400} src={"/../public/moose-howl.png"} width={300}/>
                 </div>
                 <h2>{'Howl at me!'}</h2>
+                <p>{"Subscribe to Moose's mailing list"}</p>
                 <form onSubmit={(event) => {
                     event.preventDefault();
                     console.log('message sent to moose')
                 }}>
-                    <textarea placeholder={'Your message to Moose'} />
-                    <input />
-                    <button type="submit">{'Send to Moose'}</button>
+                    <input placeholder={"woof@dogs.com"} />
+                    <button type="submit">{'Subscribe'}</button>
                 </form>
             </main>
         </div>
